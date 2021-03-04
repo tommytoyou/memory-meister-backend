@@ -17,7 +17,7 @@ const test = (req, res) => {
 const register = (req, res) => {
     // POST - adding the new user to the database
     console.log('===> Inside of /register');
-    console.log('===> req.body');
+    console.log('===> /register -> req.body');
     console.log(req.body);
 
     db.User.findOne({ email: req.body.email })
@@ -28,7 +28,7 @@ const register = (req, res) => {
             return res.status(400).json({ message: 'Email already exists' });
         } else {
             // Create a new user
-            const newUser = new User({
+            const newUser = new db.User({
                 name: req.body.name,
                 email: req.body.email,
                 password: req.body.password
@@ -49,10 +49,12 @@ const register = (req, res) => {
             });
         }
     })
+    .catch(err => console.log('Error finding user', err))
 }
 
 
 // Exports
 module.exports = {
     test,
+    register,
 }
