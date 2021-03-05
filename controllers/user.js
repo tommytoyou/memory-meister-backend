@@ -77,7 +77,7 @@ const login = async (req, res) => {
 
             jwt.sign(payload, JWT_SECRET, { expiresIn: 3600 }, (err, token) => {
                 if (err) {
-                    res.status(400).json({ message: 'Session has ended, please log in again'});
+                    res.status(400).json({ message: 'Session has endedd, please log in again'});
                 }
                 const legit = jwt.verify(token, JWT_SECRET, { expiresIn: 60 });
                 console.log('===> legit');
@@ -97,7 +97,7 @@ const login = async (req, res) => {
 const profile = (req, res) => {
     console.log('====> inside /profile');
     console.log(req.body);
-    conosle.log('====> user')
+    console.log('====> user')
     console.log(req.user);
     const { id, name, email } = req.user; // object with user object inside
     res.json({ id, name, email });
