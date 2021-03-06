@@ -30,3 +30,11 @@ Detailed info for serialized examples
 - Create a capsule : POST /examples
 - Update a capsule : PUT /examples/:id
 - Delete a capsule : DELETE /examples/:id
+
+
+# How to Use the Spotify API
+
+- [ ] Install `axios`
+```text
+npm install axios
+```
