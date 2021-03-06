@@ -11,7 +11,7 @@ This is a initializing starting point for making an API.
 | completed | Boolean | `true` or `false` |
 | __v | Number | Made by Mongoose |
 
-### Default Routes
+### Examples - Default Routes
 
 | Method | Path | Location | Purpose |
 | ------ | ---------------- | -------------- | ------------------- |
@@ -30,6 +30,18 @@ Detailed info for serialized examples
 - Create a capsule : POST /examples
 - Update a capsule : PUT /examples/:id
 - Delete a capsule : DELETE /examples/:id
+
+
+## Users
+| Column Name | Data Type | Notes |
+| --------------- | ------------- | ------------------------------ |
+| id | ObjectId | Made by MongoDB |
+| name | String | required |
+| email | String | required |
+| password | String | required (hash) |
+| date | Date | Set default date  |
+| __v | Number | Made by Mongoose |
+
 
 
 # How to Use the Spotify API
