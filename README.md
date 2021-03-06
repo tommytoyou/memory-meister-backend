@@ -15,12 +15,12 @@ This is a initializing starting point for making an API.
 
 | Method | Path | Location | Purpose |
 | ------ | ---------------- | -------------- | ------------------- |
-| GET | /v1 | app.js | Welcome to API |
-| GET | /v1/examples | example.js | Get all examples |
-| GET | /v1/examples/:id | example.js | Get one example |
-| POST | /v1/examples | example.js | Create an example |
-| PUT | /v1/examples/:id | example.js | Update an example |
-| DELETE | /v1/examples/:id | example.js | Delete an example |
+| GET | /api | app.js | Welcome to API |
+| GET | /api/examples | example.js | Get all examples |
+| GET | /api/examples/:id | example.js | Get one example |
+| POST | /api/examples | example.js | Create an example |
+| PUT | /api/examples/:id | example.js | Update an example |
+| DELETE | /api/examples/:id | example.js | Delete an example |
 
 ## Examples
 
@@ -33,6 +33,7 @@ Detailed info for serialized examples
 
 
 ## Users
+
 | Column Name | Data Type | Notes |
 | --------------- | ------------- | ------------------------------ |
 | id | ObjectId | Made by MongoDB |
@@ -42,6 +43,14 @@ Detailed info for serialized examples
 | date | Date | Set default date  |
 | __v | Number | Made by Mongoose |
 
+## Users - Default Routes
+
+| Method | Path | Location | Purpose |
+| ------ | ---------------- | -------------- | ------------------- |
+| GET | /api/users/test | user.js | Test route for users, no user returned |
+| POST | /api/users/register | user.js | Create a new user and add to DB |
+| POST | /api/users/login | user.js | Logs user in via credentials, returns user |
+| GET | /api/users/profile | user.js | Protected route, need token to access |
 
 
 # How to Use the Spotify API
