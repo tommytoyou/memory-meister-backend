@@ -22,7 +22,7 @@ This is a initializing starting point for making an API.
 | PUT | /api/examples/:id | example.js | Update an example |
 | DELETE | /api/examples/:id | example.js | Delete an example |
 
-## Examples
+## Examples - Detailed Info
 
 Detailed info for serialized examples
 - Get all examples : GET /examples
@@ -51,6 +51,14 @@ Detailed info for serialized examples
 | POST | /api/users/register | user.js | Create a new user and add to DB |
 | POST | /api/users/login | user.js | Logs user in via credentials, returns user |
 | GET | /api/users/profile | user.js | Protected route, need token to access |
+
+# Users - Detailed Info
+
+Detailed info for serialized examples
+- Test user routes : GET /users/test
+- Create a user : POST /users/register
+- Login a user : POST /users/login
+- Return user data (must login beforehand and use token) : GET /users/profile
 
 
 # How to Use the Spotify API
