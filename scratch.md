@@ -104,3 +104,17 @@ router.get('/:id', (req, res)=>{
     })
 })
 ```
+
+# Merge One Branch to Another
+
+```text
+git checkout feature1
+git merge master
+```
+
+#### Resources
+
+Making a *pull request* from a **fork** [link](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi9-6rCkpLvAhV0GjQIHcjMA5kQFjAAegQIBRAD&url=https%3A%2F%2Fdocs.github.com%2Fen%2Fgithub%2Fcollaborating-with-issues-and-pull-requests%2Fsyncing-a-fork&usg=AOvVaw3UCyL7JejM3Yi47oGqkaaa)
+TFS: Updating branch with changes from main [link](https://stackoverflow.com/questions/5317703/tfs-updating-branch-with-changes-from-main)
+[How to add authorization header in POSTMAN environment?](https://stackoverflow.com/questions/40539609/how-to-add-authorization-header-in-postman-environment)
+[JSON Web Token](https://github.com/auth0/node-jsonwebtoken)

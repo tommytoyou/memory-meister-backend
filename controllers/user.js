@@ -103,10 +103,22 @@ const profile = (req, res) => {
     res.json({ id, name, email });
 }
 
+const messages = async (req, res) => {
+    console.log('====> inside /messages');
+    console.log(req.body);
+    console.log('====> user')
+    console.log(req.user);
+    const { id, name, email } = req.user; // object with user object inside
+    const messageArray = ['message 1', 'message 2', 'message 3', 'message 4', 'message 5', 'message 6', 'message 7', 'message 8', 'message 9'];
+    const otherUser = await db.User.findOne({ id: '60415aed041e64e34c6739a6' });
+    res.json({ id, name, email, message: messageArray, otherUser });
+}
+
 // Exports
 module.exports = {
     test,
     register,
     login,
     profile,
+    messages,
 }
