@@ -1,4 +1,4 @@
-const router = express.Router();
+const router = require('express').Router();
 const ctrl = require('../controllers/');
 
 router.get('/', ctrl.message.index);
