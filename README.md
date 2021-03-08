@@ -6,7 +6,7 @@ This is a initializing starting point for making an API.
 
 | Column Name | Data Type | Notes |
 | --------------- | ------------- | ------------------------------ |
-| id | ObjectId | Made by MongoDB |
+| _id | ObjectId | Made by MongoDB |
 | name | String | Optional in this case |
 | completed | Boolean | `true` or `false` |
 | __v | Number | Made by Mongoose |
