@@ -110,8 +110,8 @@ const messages = async (req, res) => {
     console.log(req.user);
     const { id, name, email } = req.user; // object with user object inside
     const messageArray = ['message 1', 'message 2', 'message 3', 'message 4', 'message 5', 'message 6', 'message 7', 'message 8', 'message 9'];
-    const otherUser = await db.User.findOne({ id: '60415aed041e64e34c6739a6' });
-    res.json({ id, name, email, message: messageArray, otherUser });
+    const sameUser = await db.User.findOne({ _id: id });
+    res.json({ id, name, email, message: messageArray, sameUser });
 }
 
 // Exports
