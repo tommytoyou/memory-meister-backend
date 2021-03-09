@@ -26,6 +26,7 @@ app.get('/api/', (req, res) => {
 app.use('/api/examples', routes.example);
 app.use('/api/users', routes.user);
 app.use('/api/messages', routes.message);
+app.use('/api/instagram', routes.instagram);
 
 // Server
 const server = app.listen(PORT, () => console.log(`Server is running on PORT: ${PORT}`));

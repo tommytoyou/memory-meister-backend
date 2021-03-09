@@ -17,4 +17,5 @@ module.exports = {
     Example: require('./example'),
     User: require('./user'),
     Message: require('./message'),
+    InstagramPost: require('./instagram'),
 };
