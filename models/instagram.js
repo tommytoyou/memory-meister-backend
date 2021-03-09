@@ -21,6 +21,7 @@ const instagramPostSchema = new Schema({
         type: String,
         required: true
     },
+    caption: String,
     imageUrl: {
         type: String,
         required: true
